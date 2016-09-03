@@ -1,8 +1,9 @@
 {
-  "name": "corycollier/simplesamlphp-theme",
+  "name": "horgeon/simplesamlphp-theme-prodrivers",
   "version": "1.0.0",
-  "homepage": "https://github.com/corycollier/simplesamlphp-theme",
+  "homepage": "https://github.com/horgeon/simplesamlphp-module-theme-prodrivers",
   "authors": [
+    "Horgeon <me@horgeon.fr>",
     "Cory Collier <corycollier@corycollier.com>"
   ],
   "description": "Themes for the SimpleSAMLphp project",

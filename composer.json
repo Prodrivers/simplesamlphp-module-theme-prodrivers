@@ -1,5 +1,5 @@
 {
-    "name"              : "corycollier/simplesamlphp-module-themes",
+    "name"              : "horgeon/simplesamlphp-module-theme-prodrivers",
     "description"       : "Themes for use in SimpleSAMLphp installations",
     "type"              : "simplesamlphp-module",
     "license"           : "MIT",
@@ -21,6 +21,10 @@
     },
 
     "authors": [
+        {
+            "name": "Horgeon",
+            "email": "me@horgeon.fr"
+        },
         {
             "name": "Cory Collier",
             "email": "corycollier@corycollier.com"
