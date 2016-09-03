@@ -3,7 +3,6 @@
     "description"       : "Themes for use in SimpleSAMLphp installations",
     "type"              : "simplesamlphp-module",
     "license"           : "MIT",
-    "minimum-stability" : "dev",
     "prefer-stable"     : true,
     "keywords"          : [ "simplesamlphp", "modules" ],
     "require"           : {
