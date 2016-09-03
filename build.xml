@@ -286,7 +286,11 @@
   <target name="copy-src" description="copy working files to production directory">
     <!-- jquery files -->
     <copy toDir="${basedir}/www/js/">
-      <fileset dir="${basedir}/src/bower_components/jquery/dist/" />
+      <fileset dir="${basedir}/src/bower_components/jquery/dist/">
+        <exclude name="**/jquery.slim.js" />
+        <exclude name="**/jquery.slim.min.js" />
+        <exclude name="**/jquery.slim.min.map" />
+      </fileset>
     </copy>
 
     <!-- bootstrap files -->
