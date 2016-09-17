@@ -13,17 +13,18 @@
  * @since      File available since Release 1.3.0
  */
 ?>
-<?php $this->includeAtTemplateBase('includes/header.php'); ?>
+<?php $this->includeAtTemplateBase( 'includes/header.php' ); ?>
 <div class="col-md-12">
   <pre>
-  $metadata['<?php echo $this->data['m']['metadata-index']; unset($this->data['m']['metadata-index']) ?>'] => <?php
-      echo htmlspecialchars(var_export($this->data['m'], true));
-  ?>
+  $metadata['<?php echo $this->data[ 'm' ][ 'metadata-index' ];
+	  unset( $this->data[ 'm' ][ 'metadata-index' ] ) ?>'] => <?php
+	  echo htmlspecialchars( var_export( $this->data[ 'm' ], true ) );
+	  ?>
   </pre>
 </div>
 
 <div class="col-md-12">
-  <p>[ <a href="<?php echo $this->data['backlink']; ?>">back</a> ]</p>
+	<p>[ <a href="<?php echo $this->data[ 'backlink' ]; ?>">back</a> ]</p>
 </div>
 
-<?php $this->includeAtTemplateBase('includes/footer.php'); ?>
+<?php $this->includeAtTemplateBase( 'includes/footer.php' ); ?>

@@ -13,20 +13,20 @@
  */
 ?>
 <?php
-$this->data['header'] = 'Test authentication sources';
-$this->includeAtTemplateBase('includes/header.php');
+$this->data[ 'header' ] = 'Test authentication sources';
+$this->includeAtTemplateBase( 'includes/header.php' );
 ?>
 
 <div class="col-md-12">
-  <ul class="nav nav-pills nav-stacked">
-  <?php foreach ($this->data['sources'] as $id) : ?>
-    <li>
-      <a href="?as=<?php echo htmlspecialchars(urlencode($id)); ?>">
-        <?php echo htmlspecialchars($id); ?>
-      </a>
-    </li>
-  <?php endforeach; ?>
-  </ul>
+	<ul class="nav nav-pills nav-stacked">
+		<?php foreach( $this->data[ 'sources' ] as $id ) : ?>
+			<li>
+				<a href="?as=<?php echo htmlspecialchars( urlencode( $id ) ); ?>">
+					<?php echo htmlspecialchars( $id ); ?>
+				</a>
+			</li>
+		<?php endforeach; ?>
+	</ul>
 </div>
 
-<?php $this->includeAtTemplateBase('includes/footer.php'); ?>
+<?php $this->includeAtTemplateBase( 'includes/footer.php' ); ?>
