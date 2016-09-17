@@ -34,26 +34,25 @@ endif;
 </div>
 <!-- end .content -->
 
-<!-- start .footer -->
-<div class="footer">
+<!-- start .site-footer -->
+<footer class="site-footer">
 	<div class="container">
-		<!-- start the .footer.row -->
 		<div class="row">
-			<div class="col-md-12">
-				<h2><?php echo $this->t( '{core:frontpage:about_header}' ); ?></h2>
-				<p><?php echo $this->t( '{core:frontpage:about_text}' ); ?></p>
+			<div class="col-sm-6">
+				<h5>© Prodrivers</h5>
 			</div>
-			<div class="col-md-12">
-				<p>
-					Theme by <a href="http://corycollier.com/">Cory Collier</a>, and can be found at
-					<a href="https://github.com/corycollier/simplesamlphp-module-themes">
-						<i class="fa fa-github"></i> https://github.com/corycollier/simplesamlphp-module-themes</a>
-				</p>
+			<div class="col-sm-6 social-icons">
+				<a href="https://twitter.com/ProdriversPark">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<a href="https://www.youtube.com/channel/UCZXSz81L1XqkfSFy1X9WYPA">
+					<i class="fa fa-youtube-play"></i>
+				</a>
 			</div>
 		</div>
 	</div>
-</div>
-<!-- end .footer -->
+</footer>
+<!-- end .site-footer -->
 
 <script src="<?php echo $js_path; ?>/jquery.min.js"></script>
 <script src="<?php echo $js_path; ?>/bootstrap.min.js"></script>

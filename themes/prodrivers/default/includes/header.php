@@ -87,29 +87,29 @@ endif;
 
 <!-- start .header -->
 <div class="header">
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-				        data-target="#header-navigation" aria-expanded="false">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+				        data-target="#navbar-main" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">SAML</a>
+				<a class="navbar-brand logo" href="#">
+					<img src="/files/logo.png" alt="Prodrivers" />
+				</a>
 			</div>
-			<div class="collapse navbar-collapse" id="header-navigation">
+			<nav class="navbar-collapse collapse" id="navbar-main">
 				<ul class="nav navbar-nav">
-					<li role="presentation"><a href="/">Home</a></li>
+					<li><a href="/?">Accueil</a></li>
+					<li><a href="/?privacy">Declaration de confidentialite</a></li>
+					<li><a href="/?tos">Conditions d'utilisation</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<?php echo simplesamlphp_get_authentication_nav( $this ); ?>
-					<li role="presentation" class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-						   aria-expanded="false">
-							Language <span class="caret"></span>
-						</a>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Langue <span class="caret"></span></a>
 						<?php
 						// render the language selector
 						echo simplesamlphp_get_languagebar( $this, array(
@@ -119,7 +119,7 @@ endif;
 						?>
 					</li>
 				</ul>
-			</div>
+			</nav>
 		</div>
 	</nav>
 
