@@ -13,11 +13,11 @@
  */
 ?>
 <?php
-$dir = SimpleSAML_Module::getModuleDir('themes');
+$dir = SimpleSAML_Module::getModuleDir('theme-prodrivers');
 require $dir . '/lib/functions.php';
 
 // Define variables.
-$url_path  = SimpleSAML_Module::getModuleURL('themes');
+$url_path  = SimpleSAML_Module::getModuleURL('theme-prodrivers');
 $css_path  = $url_path . '/css';
 $js_path   = $url_path . '/js';
 $img_path  = $url_path . '/img';
