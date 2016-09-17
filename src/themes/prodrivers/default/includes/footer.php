@@ -55,7 +55,7 @@ endif;
     </div>
     <!-- end .footer -->
 
-    <script src="<?php echo $js_path; ?>/jquery.js"></script>
-    <script src="<?php echo $js_path; ?>/bootstrap.js"></script>
+    <script src="<?php echo $js_path; ?>/jquery.min.js"></script>
+    <script src="<?php echo $js_path; ?>/bootstrap.min.js"></script>
   </body>
 </html>

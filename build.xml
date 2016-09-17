@@ -287,6 +287,7 @@
     <!-- jquery files -->
     <copy toDir="${basedir}/www/js/">
       <fileset dir="${basedir}/src/bower_components/jquery/dist/">
+        <exclude name="**/jquery.js" />
         <exclude name="**/jquery.slim.js" />
         <exclude name="**/jquery.slim.min.js" />
         <exclude name="**/jquery.slim.min.map" />
@@ -295,15 +296,21 @@
 
     <!-- bootstrap files -->
     <copy toDir="${basedir}/www/">
-      <fileset dir="${basedir}/src/bower_components/bootstrap/dist/" />
+      <fileset dir="${basedir}/src/bower_components/bootstrap/dist/">
+        <exclude name="**/css/" />
+        <exclude name="**/js/bootstrap.js" />
+      </fileset>
     </copy>
 
-    <!-- font-awesome files -->
-    <copy toDir="${basedir}/www/css">
-      <fileset dir="${basedir}/src/bower_components/font-awesome/css/" />
-    </copy>
-    <copy toDir="${basedir}/www/fonts">
-      <fileset dir="${basedir}/src/bower_components/font-awesome/fonts/" />
+    <copy toDir="${basedir}/www/css/">
+      <fileset dir="${basedir}/src/bower_components/bootswatch/prodrivers">
+        <exclude name="**/_bootswatch.scss" />
+        <exclude name="**/_variables.scss" />
+        <exclude name="**/bootswatch.less" />
+        <exclude name="**/thumbnail.png" />
+        <exclude name="**/variables.less" />
+        <exclude name="**/bootstrap.css" />
+      </fileset>
     </copy>
 
     <copy toDir="${basedir}">

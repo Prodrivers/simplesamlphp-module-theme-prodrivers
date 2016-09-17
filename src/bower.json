@@ -24,7 +24,6 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "fontawesome#~4.4.0",
-    "bootstrap": "~3.3.5"
+    "bootswatch": "horgeon/bootswatch-prodrivers#v3.3.7.8"
   }
 }
