@@ -45,7 +45,7 @@ $errorparams            = $this->data[ 'errorparams' ];
 			<form action="?" method="post" name="f">
 
 				<div class="form-group">
-					<label for-"username">Username</label>
+					<label for-"username"><?php echo $this->t( '{login:username}' ); ?></label>
 					<input type="text" id="username"
 					       tabindex="1"
 					       name="username"
@@ -55,14 +55,14 @@ $errorparams            = $this->data[ 'errorparams' ];
 				</div>
 
 				<div class="form-group">
-					<label for-"password">Password</label>
+					<label for-"password"><?php echo $this->t( '{login:password}' ); ?></label>
 					<input type="password" id="password"
 					       tabindex="2"
 					       name="password"
 					       class="form-control"/>
 				</div>
 
-				<button type="submit" class="btn btn-default">Submit</button>
+				<button type="submit" class="btn btn-default"><?php echo $this->t( '{login:login_button}' ); ?></button>
 
 				<?php foreach( $this->data[ 'stateparams' ] as $name => $value ) : ?>
 					<input type="hidden"
