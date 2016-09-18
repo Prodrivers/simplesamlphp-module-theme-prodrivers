@@ -14,22 +14,27 @@ body {
 }
 
 /* line 15, ../../sass/screen.scss */
+.header .navbar {
+  margin-bottom: 0;
+}
+
+/* line 19, ../../sass/screen.scss */
 .content {
   padding: 20px;
   background: #fff;
 }
 
-/* line 20, ../../sass/screen.scss */
+/* line 24, ../../sass/screen.scss */
 .footer {
   padding: 20px;
   color: #ddd;
 }
-/* line 24, ../../sass/screen.scss */
+/* line 28, ../../sass/screen.scss */
 .footer a {
   color: #c00;
 }
 
-/* line 29, ../../sass/screen.scss */
+/* line 33, ../../sass/screen.scss */
 #portalcontent {
   padding: 20px 0;
 }
