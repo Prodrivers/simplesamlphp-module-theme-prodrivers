@@ -12,10 +12,12 @@ $this->includeAtTemplateBase( 'includes/header.php' ); ?>
 	</div>
 <?php } ?>
 
-<div class="col-lg-10 col-lg-offset-2">
-	<p><?php echo $this->t( 'lpw_reg_para1', array( '%UID%' => $this->data[ 'uid' ] ) ); ?></p>
-</div>
+<div class="col-md-12">
+	<div class="col-lg-10 col-lg-offset-2">
+		<p><?php echo $this->t( 'lpw_reg_para1', array( '%UID%' => $this->data[ 'uid' ] ) ); ?></p>
+	</div>
 
-<?php print $this->data[ 'formHtml' ]; ?>
+	<?php print $this->data[ 'formHtml' ]; ?>
+</div>
 
 <?php $this->includeAtTemplateBase( 'includes/footer.php' ); ?>

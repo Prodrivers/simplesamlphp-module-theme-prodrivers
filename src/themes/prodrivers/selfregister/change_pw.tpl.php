@@ -20,11 +20,13 @@ $this->includeAtTemplateBase( 'includes/header.php' ); ?>
 	</div>
 <?php } ?>
 
-<div class="col-lg-10 col-lg-offset-2">
-	<p><?php echo $this->t( 'cpw_para1', array( '%UID%' => $this->data[ 'uid' ] ) ); ?></p>
-</div>
+<div class="col-md-12">
+	<div class="col-lg-10 col-lg-offset-2">
+		<p><?php echo $this->t( 'cpw_para1', array( '%UID%' => $this->data[ 'uid' ] ) ); ?></p>
+	</div>
 
-<?php echo $this->data[ 'formHtml' ]; ?>
+	<?php echo $this->data[ 'formHtml' ]; ?>
+</div>
 
 <div class="col-md-12">
 	<ul class="nav nav-pills nav-stacked">

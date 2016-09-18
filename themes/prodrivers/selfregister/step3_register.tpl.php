@@ -12,9 +12,9 @@ $this->includeAtTemplateBase( 'includes/header.php' ); ?>
 	</div>
 <?php } ?>
 
-	<div class="col-lg-10 col-lg-offset-2">
-		<p><p><?php echo $this->t( 's3_intro' ); ?></p></p>
-	</div>
+<div class="col-lg-10 col-lg-offset-2">
+	<p><?php echo $this->t( 's3_intro' ); ?></p>
+</div>
 
 <?php print $this->data[ 'formHtml' ]; ?>
 
