@@ -40,7 +40,7 @@ $img_path = $url_path . '/img';
 </footer>
 <!-- end .site-footer -->
 
-<script src="<?php echo $js_path; ?>/jquery.min.js"></script>
-<script src="<?php echo $js_path; ?>/bootstrap.min.js"></script>
+<script src="//cdn.prodrivers.fr/file/prodrivers/js/jquery.js"></script>
+<script src="//cdn.prodrivers.fr/file/prodrivers/js/bootstrap.js"></script>
 </body>
 </html>

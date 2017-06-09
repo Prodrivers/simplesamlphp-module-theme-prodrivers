@@ -29,6 +29,10 @@ $login_url = isset( $this->data[ 'loginurl' ] )
 	? $this->data[ 'loginurl' ]
 	: '';
 
+$title = isset( $this->data[ 'header' ] )
+	? $this->data[ 'header' ]
+	: 'SimpleSAMLphp';
+
 $alert_msg = $this->data[ 'isadmin' ]
 	? $this->t( '{core:frontpage:loggedin_as_admin}' )
 	: '<a href="' . $login_url . '">' . $this->t( '{core:frontpage:login_as_admin}' ) . '</a>';
@@ -55,10 +59,11 @@ endif;
 	<meta name="description" content="SAML Configuration">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" type="image/png" href="/files/icon.png" />
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<!-- Place favicon.ico in the root directory -->
 
-	<link rel="stylesheet" type="text/css" href="<?php echo $css_path; ?>/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.prodrivers.fr/file/prodrivers/css/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo $css_path; ?>/print.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo $css_path; ?>/screen.css"/>
 
@@ -94,7 +99,7 @@ endif;
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand logo" href="#">
-					<img src="/files/logo.png" alt="Prodrivers" />
+					<img src="//cdn.prodrivers.fr/file/prodrivers/site/logo.png" alt="Prodrivers" />
 				</a>
 			</div>
 			<nav class="navbar-collapse collapse" id="navbar-main">
