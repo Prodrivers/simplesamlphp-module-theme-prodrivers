@@ -53,15 +53,18 @@ endif;
 <!doctype html>
 <html class="" lang="<?php echo $language; ?>">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title><?php echo $title; ?></title>
-	<meta name="description" content="SAML Configuration">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="SAML Configuration" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" type="image/png" href="/files/icon.png" />
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<!-- Place favicon.ico in the root directory -->
+	<!--[if lt IE 9]>
+		<script src="//cdn.prodrivers.fr/file/prodrivers/js/html5shiv.js"></script>
+		<script src="//cdn.prodrivers.fr/file/prodrivers/js/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="shortcut icon" href="//cdn.prodrivers.fr/file/prodrivers/site/icon.png" type="image/png" />
 
 	<link rel="stylesheet" type="text/css" href="//cdn.prodrivers.fr/file/prodrivers/css/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo $css_path; ?>/print.css"/>
