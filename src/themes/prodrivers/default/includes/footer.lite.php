@@ -21,14 +21,42 @@ $img_path = $url_path . '/img';
 ?>
 
 <!-- start .site-footer -->
-<footer class="site-footer">
+<footer class="site">
 	<div class="container">
+		<div class="infos row">
+			<div class="col-sm-6">
+				<ul class="nav nav-pills">
+					<li role="presentation">
+						<a href="https://prodrivers.fr/legal">Mentions légales</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Langue <span class="caret"></span></a>
+						<?php
+						echo simplesamlphp_get_languagebar( $this, array(
+							'post'                  => $_POST,
+							'languageParameterName' => $this->languageParameterName,
+						) );
+						?>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div>
+					<p class="text-center">
+						<a href="https://prodrivers.fr/"><img alt="Informations sur Prodrivers" src="//cdn.prodrivers.fr/file/prodrivers/site/logo.png"/></a>
+					</p>
+					<p class="text-center">
+						<strong>Prodrivers</strong> est un collectif de passionnés dédié au divertissement.
+					</p>
+				</div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-sm-6">
-				<h5>© Prodrivers</h5>
+				<h5>&copy; Prodrivers</h5>
 			</div>
 			<div class="col-sm-6 social-icons">
-				<a href="https://twitter.com/ProdriversPark">
+				<a href="https://prodrivers.fr/#follow">
 					<i class="fa fa-twitter"></i>
 				</a>
 				<a href="https://www.youtube.com/channel/UCZXSz81L1XqkfSFy1X9WYPA">
