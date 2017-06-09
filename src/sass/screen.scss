@@ -37,3 +37,16 @@ body {
 #portalcontent {
    padding : 20px 0;
 }
+
+.btn.auth {
+  width: 100%;
+
+  &.facebook {
+    background: #3b5998;
+    color: #fff;
+  }
+
+  .fa {
+    margin-right: 0.5em;
+  }
+}

@@ -43,3 +43,17 @@ body {
 #portalcontent {
   padding: 20px 0;
 }
+
+/* line 41, ../../sass/screen.scss */
+.btn.auth {
+  width: 100%;
+}
+/* line 44, ../../sass/screen.scss */
+.btn.auth.facebook {
+  background: #3b5998;
+  color: #fff;
+}
+/* line 49, ../../sass/screen.scss */
+.btn.auth .fa {
+  margin-right: 0.5em;
+}
