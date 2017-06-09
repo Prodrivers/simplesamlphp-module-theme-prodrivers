@@ -21,17 +21,38 @@ $errorparams            = $this->data[ 'errorparams' ];
 <?php $this->includeAtTemplateBase( 'includes/header.lite.php' ); ?>
 
 <style>
-	body {
-		background: url(/files/bg.jpg);
-		background-attachment: fixed;
-		background-position: center top;
+	body::before {
+		content: ' ';
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-image: url( '//cdn.prodrivers.fr/file/prodrivers/account/bg.jpg' );
 		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: -1;
 	}
 
 	.header,
-	.navbar,
-	.site-footer {
+	.navbar:not(.force),
+	footer.site {
 		background: transparent!important;
+	}
+
+	footer.site {
+		color: #fff;
+		text-shadow: 0 0 10px #333!important;
+	}
+
+	footer.site ul li a:hover {
+		text-shadow: none;
+	}
+
+	footer.site .social-icons a {
+		color: #333;
+		background-color: #fff;
+		text-shadow: none;
 	}
 </style>
 
