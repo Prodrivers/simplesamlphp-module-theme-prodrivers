@@ -106,22 +106,12 @@ endif;
 				</a>
 			</div>
 			<nav class="navbar-collapse collapse" id="navbar-main">
-				<ul class="nav navbar-nav">
-					<li><a href="/?">Accueil</a></li>
-					<li><a href="/?privacy">Declaration de confidentialite</a></li>
-					<li><a href="/?tos">Conditions d'utilisation</a></li>
-				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Langue <span class="caret"></span></a>
-						<?php
-						// render the language selector
-						echo simplesamlphp_get_languagebar( $this, array(
-							'post'                  => $_POST,
-							'languageParameterName' => $this->languageParameterName,
-						) );
-						?>
-					</li>
+					<li><a href="/">Accueil</a></li>
+					<li><a href="/#contents">Contenus</a></li>
+					<li><a href="/#members">Membres</a></li>
+					<li><a href="/#follow">Nous suivre</a></li>
+					<li><a href="https://account.prodrivers.fr/">Compte</a></li>
 				</ul>
 			</nav>
 		</div>
